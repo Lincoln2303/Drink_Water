@@ -3,7 +3,7 @@ A web application that helps you track and remind yourself to drink water regula
 
 ## Preview
 
-![Alt Text](img/gif_name.gif)
+![Alt Text](img/drink_water.gif)
 
 ## Technologies Used
 
