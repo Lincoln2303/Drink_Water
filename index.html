@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Drink Water</title>
+</head>
+<body>
+    <h1>Drink Water</h1>
+    <h3>Goal: 2 Liters</h3>
+    <!-- I.01. We'll start with a div for the cup: (NOTE: This is going to be the shape of the cup => both on small, and the big one ) -->
+    <div class="cup">
+        <!-- I.02. Adding another class for the amount of remaining water: (NOTE: We'll add an id to, for the javascript) -->
+        <div class="remained" id="remained">
+            <!-- I.03. Inside we add a span, and a small tag -->
+            <span id="liters"></span>
+            <small>Remained</small>
+        </div>
+        <!-- I.04. We're adding the percentage: (NOTE: What we drink, also with an id => this will be dynamic) -->
+        <div class="percentage" id="percentage">
+        </div>
+    </div>
+    <!-- I.05. Then we add a p with a class text: (NOTE:) -->
+    <p class="text">Select how many glasses of water have you drank</p>
+    <!-- I.06. We add a class of cups: (NOTE: This is where all the small cups gonna go)-->
+    <!-- AFTER: We're gonna do our css (I.07.) -->
+    <div class="cups">
+        <!-- NOTE: We add 8 small cups, with cup class and separatately cup-small class, and add the class of full to a couple to see! -->
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+        <div class="cup cup-small">250 ml</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+/* I.11. Setting up colors in the :root: */
+:root {
+    --border-color: #144fc6;
+    --fill-color: #6ab3f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* I.07. First few adjusments in the body: */
+body {
+    background-color: #3494e4;
+    color: #fff ;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* height: 100vh; */
+    /* NOTE: We use "overflow" on hidden, because we don't want scroll bars to be shown by default */
+    /* overflow: hidden; */
+    margin-bottom: 40px;
+}
+
+/* I.08. Styling h1: */
+h1 {
+    margin: 10px 0 0;
+}
+
+/* I.09. Styling h3: */
+h3 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* I.10. Styling the cup: (NOTE: This is both for the big cup, and the small ones) */
+.cup {
+    background-color: #fff;
+    border: 4px solid var(--border-color);
+    color: var(--border-color);
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    /* NOTE: This will make sure that nothing comes out of the container  */
+    overflow: hidden;
+}
+
+/* I.11. Styling the small cups: */
+.cup.cup-small {
+    width: 50px;
+    height: 95px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    /* NOTE: We add the transition affect when we fill it with water */
+    transition: 0.3 ease ;
+}
+
+/* I.13. Stlying small cups separately, which has a class of full: */
+.cup.cup-small.full {
+    background-color: var(--fill-color);
+    color: #fff;
+}
+
+/* I.12. Styling the cups class: (NOTE: To display them together) */
+.cups {
+    display: flex;
+    /* NOTE: flex-wrap will help us with knocking them into the next line => To make it work we have to add the width too*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+}
+
+/* I.14. After styling the remained class: */
+.remained {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+/* I.15. Styling the span in the remained class: */
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* I.16. Styling small tag in the remained class: */
+.remained small {
+    font-size: 12px;
+}
+
+/* I.17. Styling the percentage: */
+.percentage {
+    background-color: var(--fill-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    /* NOTE: We'll set the initial height to be 0 */
+    height: 0;
+    transition: 0.3s ease;
+}
+
+/* I.18. Styling the text: (NOTE: Now we can remove the full class from the html)*/
+/* AFTER: In the next section we'll start the javascript (section II.) */
+.text {
+    text-align: center;
+    margin: 0 0 5px;
+}
+
